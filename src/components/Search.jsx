@@ -15,6 +15,7 @@ const submitSearch = (e) => {
     e.preventDefault()
     // console.log(e + "Привет")
     navigate('ereminrecipesapp/searched/' + searchInput)
+    setSearchInput('')
 }
 
 
@@ -23,6 +24,7 @@ const submitSearch = (e) => {
             <div>
                 <FaSearch/>
                 <input type="text"
+                       placeholder="Название блюда вводите на английском"
                        onChange={onChangeSearch}
                        value={searchInput}/>
             </div>
