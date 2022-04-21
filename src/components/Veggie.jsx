@@ -30,7 +30,7 @@ function Veggie(props) {
                 setVeggie(JSON.parse(checkLocalStorage))
             } else {
                 // const api = await axios.get(`${requests.fetchVegetarian}`)
-                const api = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`)
+                const api = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=15c20b856b6741bc85914517bd05a182&number=9&tags=vegetarian`)
                 localStorage.setItem("veggie", JSON.stringify(api.data.recipes))
                 setVeggie(api.data.recipes)
                 console.log(api.data.recipes)

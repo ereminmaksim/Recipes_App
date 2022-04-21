@@ -41,7 +41,7 @@ function Popular() {
             } else {
 
                 // const resp = await axios.get(`${requests.fetchPopular}`);
-                const resp = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=european`);
+                const resp = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=15c20b856b6741bc85914517bd05a182&number=9&tags=european`);
                 console.log(resp.data);
                 localStorage.setItem("popular", JSON.stringify(resp.data.recipes))
                 setPopular(resp.data.recipes)
