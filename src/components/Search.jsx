@@ -14,7 +14,7 @@ const onChangeSearch = (e) => {
 const submitSearch = (e) => {
     e.preventDefault()
     // console.log(e + "Привет")
-    navigate('/searched/' + searchInput)
+    navigate('ereminrecipesapp/searched/' + searchInput)
 }
 
 

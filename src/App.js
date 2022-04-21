@@ -22,7 +22,7 @@ function App() {
 
                         <Nav>
                             <GiKnifeFork/>
-                            <Logo to={'/'}>Меню</Logo>
+                            <Logo to={'ereminrecipesapp/'}>Меню</Logo>
                         </Nav>
                         <div className='wrapper'>
                             <Search/>

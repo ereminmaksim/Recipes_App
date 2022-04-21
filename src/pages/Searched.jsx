@@ -41,9 +41,7 @@ function Searched() {
                 }}>
                     {searched.map(e => {
                         return (
-                            <div key={e.id}>
-                                <SplideSlide>
-                                    <span>Залупа</span>
+                                <SplideSlide key={e.id}>
                                     <Card>
                                         <Link to={'/recipe/' + e.id}>
                                             <p>{e.title}</p>
@@ -51,7 +49,6 @@ function Searched() {
                                         </Link>
                                     </Card>
                                 </SplideSlide>
-                            </div>
                         )
                     })}
                 </Splide>
