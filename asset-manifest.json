@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ereminrecipesapp/static/css/main.4f343b98.css",
-    "main.js": "/ereminrecipesapp/static/js/main.bfad9036.js",
+    "main.js": "/ereminrecipesapp/static/js/main.b4ab4e07.js",
     "static/media/process.mp4": "/ereminrecipesapp/static/media/process.bdfa22d123fdf922ce44.mp4",
     "index.html": "/ereminrecipesapp/index.html",
     "main.4f343b98.css.map": "/ereminrecipesapp/static/css/main.4f343b98.css.map",
-    "main.bfad9036.js.map": "/ereminrecipesapp/static/js/main.bfad9036.js.map"
+    "main.b4ab4e07.js.map": "/ereminrecipesapp/static/js/main.b4ab4e07.js.map"
   },
   "entrypoints": [
     "static/css/main.4f343b98.css",
-    "static/js/main.bfad9036.js"
+    "static/js/main.b4ab4e07.js"
   ]
 }
