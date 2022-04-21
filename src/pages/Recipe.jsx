@@ -30,7 +30,8 @@ function Recipe() {
     const fetchDetails = async () => {
         setLoading(true)
         try {
-            const res = await axios.get(`${BASE_URL_DETAILS}${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
+            // const res = await axios.get(`${BASE_URL_DETAILS}${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
+            const res = await axios.get(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
             setDetailList(res.data)
             console.log(res.data)
         } catch (error) {

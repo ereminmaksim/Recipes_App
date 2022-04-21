@@ -13,7 +13,8 @@ function Searched() {
 
     const getSearched = async (name) => {
         try {
-            const res = await axios.get(`${requests.fetchSearch}&query=${name}`)
+            // const res = await axios.get(`${requests.fetchSearch}&query=${name}`)
+            const res = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${name}`)
             setSearched(res.data.results)
             console.log(res.data.results)
         } catch (error) {
