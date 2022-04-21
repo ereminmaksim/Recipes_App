@@ -26,12 +26,12 @@ function Recipe() {
 //     setActivBtn('ingredients')
 // }
 
-
+    // apiKey=15c20b856b6741bc85914517bd05a182
     const fetchDetails = async () => {
         setLoading(true)
         try {
             // const res = await axios.get(`${BASE_URL_DETAILS}${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
-            const res = await axios.get(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
+            const res = await axios.get(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=15c20b856b6741bc85914517bd05a182`)
             setDetailList(res.data)
             console.log(res.data)
         } catch (error) {

@@ -58,7 +58,7 @@ function Veggie(props) {
                 {veggie?.map(e => (
                         <SplideSlide key={e.id}>
                             <Card>
-                                <Link to={'/recipe/' + e.id}>
+                                <Link to={'recipe/' + e.id}>
                                     <p>{e.title}</p>
                                     <img src={e.image} alt={e.title}/>
                                     <Gradient/>

@@ -18,7 +18,7 @@ function Cuisine() {
     const getCuisine = async (name) => {
         try {
             // const data = await fetch(`${requests.fetchSearch}&cuisine=${name}`)
-            const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`)
+            const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=15c20b856b6741bc85914517bd05a182&cuisine=${name}`)
             const recipes = await data.json()
 
             setCuisine(recipes.results)
@@ -50,7 +50,7 @@ function Cuisine() {
                         cuisine.map(e => (
                                 <SplideSlide key={e.id}>
                                     <Card>
-                                        <Link to={'ereminrecipesapp/recipe/' + e.id}>
+                                        <Link to={'/ereminrecipesapp/recipe/' + e.id}>
                                             <p>{e.title}</p>
                                             <img src={e.image} alt={e.title}/>
                                         </Link>

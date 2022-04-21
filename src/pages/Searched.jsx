@@ -10,11 +10,11 @@ function Searched() {
     const [searched, setSearched] = useState([])
     let params = useParams()
 
-
+    // 15c20b856b6741bc85914517bd05a182
     const getSearched = async (name) => {
         try {
             // const res = await axios.get(`${requests.fetchSearch}&query=${name}`)
-            const res = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${name}`)
+            const res = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=15c20b856b6741bc85914517bd05a182&query=${name}`)
             setSearched(res.data.results)
             console.log(res.data.results)
         } catch (error) {
@@ -43,7 +43,7 @@ function Searched() {
                         return (
                                 <SplideSlide key={e.id}>
                                     <Card>
-                                        <Link to={'/recipe/' + e.id}>
+                                        <Link to={'/ereminrecipesapp/recipe/' + e.id}>
                                             <p>{e.title}</p>
                                             <img src={e.image} alt={e.title}/>
                                         </Link>

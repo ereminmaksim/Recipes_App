@@ -25,23 +25,6 @@ function Category() {
                 <GiChopsticks />
                 <h4>Японская</h4>
             </SList>
-            {/*<SList to={`https://api.spoonacular.com/recipes/random?apiKey${process.env.REACT_APP_API_KEY}/cuisine/italian`}>*/}
-            {/*    <FaPizzaSlice/>*/}
-            {/*    <h4>Итальянская</h4>*/}
-            {/*</SList>*/}
-            {/*<SList to={`https://api.spoonacular.com/recipes/random?apiKey${process.env.REACT_APP_API_KEY}/cuisine/american`}>*/}
-            {/*    <FaHamburger/>*/}
-            {/*    <h4>Американская</h4>*/}
-            {/*</SList>*/}
-            {/*<SList to={`https://api.spoonacular.com/recipes/random?apiKey${process.env.REACT_APP_API_KEY}/cuisine/thai`}>*/}
-            {/*    <GiNoodles/>*/}
-            {/*    <h4>Тайская</h4>*/}
-            {/*</SList>*/}
-            {/*<SList to={`https://api.spoonacular.com/recipes/random?apiKey${process.env.REACT_APP_API_KEY}/cuisine/japanese`}>*/}
-            {/*    <GiChopsticks />*/}
-            {/*    <h4>Японская</h4>*/}
-            {/*</SList>*/}
-
         </List>
     );
 }
